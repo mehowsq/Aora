@@ -8,7 +8,7 @@ interface FormFieldProps {
   value: string;
   placeholder?: string;
   handleChangeText: (text: string) => void;
-  otherStyles: string;
+  otherStyles?: string;
 }
 
 const FormField = ({
