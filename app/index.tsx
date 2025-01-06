@@ -1,3 +1,4 @@
+import "react-native-url-polyfill/auto";
 import { Text, View, Image, ScrollView } from "react-native";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
