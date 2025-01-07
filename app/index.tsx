@@ -1,5 +1,5 @@
 import "react-native-url-polyfill/auto";
-import { Text, View, Image, ScrollView } from "react-native";
+import { Text, View, Image, ScrollView, Button } from "react-native";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { Link, Redirect, router } from "expo-router";
@@ -39,11 +39,16 @@ export default function App() {
             exploration with Aora
           </Text>
         </View>
+
         <CustomButton
           title="Continue with Email"
           handlePress={() => router.push("/sign-in")}
-          containerStyles={"w-full mt-10"}
+          containerStyles={"mx-4 my-6"}
         />
+
+        <Link href="/home" className="text-white text-center">
+          HOME SCREEN
+        </Link>
       </ScrollView>
       <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>
